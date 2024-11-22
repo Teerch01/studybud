@@ -3,9 +3,8 @@ from django.db.models import Q
 from django.http import HttpResponse
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
-from urllib.parse import unquote, quote
 
 from .models import Room, Topic, Message, User
 from .forms import RoomForm, UserForm, CreateUserForm
